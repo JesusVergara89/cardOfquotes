@@ -1,0 +1,68 @@
+body {
+  margin: 0;
+}
+
+h2 {
+  margin: 0;
+}
+
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.App {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  box-sizing: border-box;
+  width: min(650px, 100%);
+  min-height: fit-content;
+  padding: 35px;
+  border-radius: 15px;
+  box-shadow: 1px 1px 10px 0 #000a;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.div-1 {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.div-1 .simbol {
+  font-size: 80px;
+  top: 0;
+}
+.card .author1 {
+  text-align: center;
+  font-size: 16px;
+}
+
+.card-btn {
+  display: block;
+  width: 40px;
+  border-radius: 50%;
+  aspect-ratio: 1;
+  border: none;
+  color: white;
+  font-size: 25px;
+  position: relative;
+  left: 100%;
+  transform: translateX(-100%);
+  box-shadow: 1px 1px 10px 0 #000a;
+  transition: box-shadow 200ms ease;
+}
+
+.card-btn:active {
+  box-shadow: 0 0 0 0 #000a;
+  transition: box-shadow 200ms ease;
+}
